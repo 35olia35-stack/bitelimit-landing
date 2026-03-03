@@ -4,8 +4,25 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>BiteLimit</title>
+
+<style>
+  body { margin:0; background:#000; }
+  .wrap { position:relative; max-width:900px; margin:0 auto; }
+  .hero { width:100%; display:block; }
+  .hotspot { position:absolute; display:block; }
+
+  /* TODO: подгоним после — пока оставляем примерные зоны */
+  .email   { left: 6%;  top: 86%; width: 40%; height: 4%; }
+  .privacy { left: 36%; top: 94%; width: 28%; height: 4%; }
+</style>
 </head>
+
 <body>
-<h1>BiteLimit Landing</h1>
+  <div class="wrap">
+    <img src="hero.png" class="hero" alt="BiteLimit">
+
+    <a href="mailto:contact@bitelimit.xyz" class="hotspot email" aria-label="Email"></a>
+    <a href="/privacy.html" class="hotspot privacy" aria-label="Privacy Policy"></a>
+  </div>
 </body>
 </html>
