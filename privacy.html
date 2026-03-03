@@ -6,23 +6,28 @@
 <title>Privacy Policy - BiteLimit</title>
 
 <style>
-  body { margin:0; background:#000; }
-  .wrap { position:relative; width:100%; }
-  .hero { width:100%; display:block; }
-.back {
-  position: absolute;
-  left: 4%;
-  bottom: 3%;
-  width: 25%;
-  height: 5%;
-}
+  body { margin: 0; background: #000; }
+  .wrap { position: relative; width: 100%; }
+  .hero { width: 100%; display: block; }
+
+  /* Transparent clickable area (Back to main) */
+  .back {
+    position: absolute;
+    left: 4%;
+    bottom: 3%;
+    width: 25%;
+    height: 5%;
+    display: block;
+    text-decoration: none;
+    color: transparent;
+  }
 </style>
 </head>
 
 <body>
   <div class="wrap">
     <img src="privacy.png" class="hero" alt="Privacy Policy">
-    <a href="/" class="back-text">Back to Main Page</a>
+    <a href="/" class="back" aria-label="Back to Main Page"></a>
   </div>
 </body>
 </html>
